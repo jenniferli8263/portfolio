@@ -1,38 +1,288 @@
-.App {
-  text-align: center;
+@font-face{
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Bold.ttf');
+  font-weight:700;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face{
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Medium.ttf');
+  font-weight:500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face{
+  font-family: Centra;
+  src: url('./assets/font/CentraNo2-Book.ttf');
+  font-weight:400;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/************************Default************************/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 75px;
+}
+
+body {
+  font-weight: 400;
+  overflow-x: hidden;
+  position: relative;
+  background-color: #121212 !important;
+  color: #fff !important;
+  font-family: 'Centra', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+p, a, li, button, ul {
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+  text-decoration: none;
+  color:#fff !important;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+button {
+  border: 0;
+  background-color: transparent;
+}
+
+input:focus, textarea:focus, select:focus {
+  outline: none;
+}
+
+@media (min-width:1700px) {
+	main .container {
+		max-width: 100%;
+		padding: 0 150px;
+	}
+}
+
+p.success {
+	color: green;
+}
+
+p.danger {
+	color: red;
+}
+
+
+/************************Navbar************************/
+
+nav.navbar {
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 9999;
+  transition:  0.32s ease-in-out;
+}
+nav.navbar.scrolled {
+  padding: 0px 0;
+  background-color: #121212;
+}
+nav.navbar .navbar-nav .nav-link.navbar-link{
+  font-weight: 400;
+  color: #fff !important;
+  letter-spacing: 1px;
+  padding: 0 25px;
+  font-size: 23px;
+  opacity: 0.75;
+}
+
+nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
+nav.navbar .navbar-nav a.nav-link.navbar-link.active {
+    opacity: 1;
+    /* font-weight: bold; */
+    transition:  0.32s ease-in-out;
+}
+
+span.navbar-text {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+}
+.social-icon {
+  display: inline-block;
+  margin-left: 14px;
+}
+
+.social-icon a {
+  width: 50px;
+  height: 50px;
+  background: rgba(217, 217, 217, 0.1);
+  display: inline-flex;
+  border-radius: 50%;
+  margin-right: 7px;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  line-height: 1;
+  border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
-.App-link {
-  color: #61dafb;
+.social-icon a img{
+  width: 25px;
+  height: 25px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-icon a:hover{
+  transition:  0.32s ease-in-out;
+  transform: scale(1.1);
+}
+
+.navbar-text button {
+  font-weight: 700;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 18px 34px;
+  font-size: 18px;
+  margin-left: 18px;
+  position: relative;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+}
+
+.navbar-text button:hover{
+  transition:  0.32s ease-in-out;
+  transform: scale(1.05);
+}
+
+/*Banner*/
+.banner {
+  margin-top: 0;
+  padding: 150px 0 100px 0;
+  background-image: url('./assets/img/banner-bg.png');
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner h1 {
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 1;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.banner img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+    0% {
+        transform: translateY(-20px);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+.wrap {
+  border-right: 0.08em solid #666;
+}
+/************************About************************/
+
+/* .about{
+  margin-top:50px;
+} */
+
+.about p{
+  font-size: 20px;
+}
+.progress-bar{
+  min-width: 70px;
+  border-radius: 20px;
+  /* background-color: #783f91 !important; */
+  background-image: linear-gradient(to right, #783f91, #5988d4);
+}
+
+.progress{
+  --bs-progress-bg: #121212 !important;
+}
+
+.row.skills{
+  align-items:flex-start;
+}
+
+
+
+/************************Projects************************/
+.project h1{
+  margin-top:20px;
+  font-size: 50px;
+}
+
+.project p{
+  font-size: 20px;
+}
+.project{
+  display:flex;
+  align-items: center;
+  position: relative;
+}
+
+.card{
+  background-color:#212252 !important;
+  /* width: 25rem; */
+  margin-bottom: 30px;
+  color:#fff;
+}
+
+.card-title{
+  color:#fff !important;
+  font-size:25px !important;
+}
+
+.card-text{
+  font-size: 15px !important;
+  font-weight: 100 !important;
+  opacity: 0.8 !important;
+}
+
+.card:hover{
+  transition:  0.25s ease-in-out;
+  transform: scale(1.05);
+}
+
+.row{
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.cardImg{
+  height:30px;
+  width:30px;
+}
+
+.githubIcon{
+  height:25px;
+  width:25px;
+}
+
+.project{
+  margin-bottom: 50px;
+}
+
+
+/************************Footer************************/
+.footer-col{
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
