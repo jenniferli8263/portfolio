@@ -13,7 +13,7 @@ function Projects(){
             title: "Wattendance",
             description: "Full-stack application that uses facial recognition on a Raspberry Pi to track and update students' attendance records in real time",
             imgUrl: wattendance,
-            projLink: "https://github.com/jenniferli8263/"
+            projLink: "https://github.com/jenniferli8263/wattendance"
         },
         {
             title: "PathFinder",
