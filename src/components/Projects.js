@@ -5,7 +5,7 @@ import clubConnect from '../assets/img/clubconnect.png';
 import osTranslate from '../assets/img/ostranslate.png';
 import pathfinder from '../assets/img/pathfinder.png';
 import wattendance from '../assets/img/wattendance.png';
-
+/*NPM RUN DEPLOY TO UPDATE GH PAGES*/
 
 function Projects(){
     const projects = [
