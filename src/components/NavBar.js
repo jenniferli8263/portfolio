@@ -55,7 +55,7 @@ function NavBar() {
               {/* <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>
               </HashLink> */}
-              <a href="https://drive.google.com/file/d/1Nl8AsFBmnMacFvVSDyj78fJi2ZKkf4FW/view?usp=sharing" target="_blank">
+              <a href="https://drive.google.com/file/d/1ZssK0skoPy4zW_WRxqQrd85Enj3FuAXf/view?usp=sharing" target="_blank">
               {/* <Link to="/resume"> */}
                 <button className="cv"><span>Resume</span></button>
               {/* </Link> */}
