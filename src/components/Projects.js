@@ -25,13 +25,13 @@ function Projects(){
             title: "OSTranslate",
             description: "A Flask Application that summarizes and translates text, audio and video files using APIs from Symbl.ai and Google Translate",
             imgUrl: osTranslate,
-            projLink: "https://github.com/acrenw/ignitionsHacks2"
+            projLink: "https://github.com/jenniferli8263/ostranslate"
         },
         {
             title: "University ClubConnect",
             description: "A website where new university students can find compatible clubs to join at their university after taking a personality quiz",
             imgUrl: clubConnect,
-            projLink: "https://github.com/exxia0/exxia0.github.io"
+            projLink: "https://github.com/jenniferli8263/university-clubconnect"
         },
     ];
 
