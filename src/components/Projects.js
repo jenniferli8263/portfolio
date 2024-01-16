@@ -4,6 +4,7 @@ import projImg3 from "../assets/img/project-img3.png";
 import clubConnect from '../assets/img/clubconnect.png';
 import osTranslate from '../assets/img/ostranslate.png';
 import pathfinder from '../assets/img/pathfinder.png';
+import studyspace from '../assets/img/studyspace.png';
 import wattendance from '../assets/img/wattendance.png';
 /*NPM RUN DEPLOY TO UPDATE GH PAGES*/
 
@@ -27,6 +28,13 @@ function Projects(){
             imgUrl: osTranslate,
             projLink: "https://github.com/jenniferli8263/ostranslate"
         },
+        // {
+        //     title: "StudySpace",
+        //     description: "A Processing program that boosts users' productivity through the use of to-do lists, timers, and relaxing music",
+        //     imgUrl: studyspace,
+        //     projLink: "https://github.com/jenniferli8263/studyspace"
+
+        // },
         {
             title: "University ClubConnect",
             description: "A website where new university students can find compatible clubs to join at their university after taking a personality quiz",

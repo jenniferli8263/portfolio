@@ -59,7 +59,7 @@ function About(){
                 <Row>
                     <Col>
                     <h1>About</h1>
-                    <p>Hi! My name is Jennifer, and I am a software engineering student at the University of Waterloo.  I am passionate about AI, web development, and software applications in quantitative finance.</p>
+                    <p>Hi! My name is Jennifer, and I am a first year software engineering student at the University of Waterloo.  I am passionate about AI, web development, and software applications in quantitative finance.</p>
                     <p>Beyond coding and engineering, I find joy in playing badminton, reading books, or going for a refreshing walk.</p>
                     <p>Currently seeking 2024 summer internships</p>
                     </Col>
